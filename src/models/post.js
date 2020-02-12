@@ -7,27 +7,36 @@ const postsSchema = new mongoose.Schema({
         minlength: 2,
         maxlength: 100,
         required: true,
-        toLowerCase: true
+        trim: true,
     },
     author: {
         type: String,
         minlength: 2,
+        maxlength: 20,
         required: true,
-        toLowerCase: true
+        toLowerCase: true,
+        trim: true
     },
-    date: {
+    dateCreated: {
         type: Date,
-        required: true
+        default: new Date()
     },
     readingTime: {
         type: Number,
-        minlength: 1,
+        min: 1,
         required: true
     },
-    image: {
+    imageUrl: {
         type: String,
         minlength: 5,
+        maxlength: 500,
         required: true
+    },
+    description: {
+        type: String,
+        required: true,
+        minlength: 5,
+        maxlength: 128
     }
 })
 
