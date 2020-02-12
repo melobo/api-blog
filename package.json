@@ -1,0 +1,28 @@
+{
+  "name": "api-blog",
+  "version": "1.0.0",
+  "description": "Api for controlling blog entries.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "medium",
+    "blog",
+    "express",
+    "nodejs",
+    "nodemoon"
+  ],
+  "author": "@melobo",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "standard": "^14.3.1"
+  }
+}
