@@ -1,0 +1,6 @@
+---
+applications:
+ - name: melobo-blog
+   random-route: false
+   memory: 128M
+
